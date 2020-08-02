@@ -1,6 +1,13 @@
 /**
  * AB_instagram_feed
+ * version: 1.0.0
+ *
+ * AB_instagram_feed() displays a select number of posts using a given username
+ *
+ * @param {string} userName - Instagram username 
+ * @param {number} feedLength - Number of posts to display
  */
+
 function instagramFeed(userName, feedLength) {
 
     var instagramUser = userName;
