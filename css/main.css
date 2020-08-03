@@ -3,6 +3,10 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+body {
+  font-family: sans-serif;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -16,4 +20,34 @@ img {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+#instagramFeed li a {
+  position: relative;
+  display: block;
+}
+#instagramFeed li a:hover .instagram-item-overlay {
+  opacity: 1;
+}
+#instagramFeed li a .instagram-item-overlay {
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 125px 0 0;
+  opacity: 0;
+  transition: 0.25s ease opacity;
+  text-decoration: none;
+  text-align: center;
+}
+#instagramFeed li a .instagram-item-overlay svg {
+  width: 25px;
+  fill: #fff;
+  margin: 0 7px -5px 0;
+}
+#instagramFeed li a .instagram-item-overlay svg:nth-of-type(2) {
+  margin-left: 5px;
+}
+#instagramFeed li a img {
+  display: block;
 }
